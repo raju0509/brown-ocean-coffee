@@ -1,0 +1,340 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#20120c"><meta name="description" content="The Brown Ocean Coffee — born deep, made bold."><title>Shop | Brown Ocean Coffee</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="pages.css"></head><body>  <!-- Announcement Bar -->
+  <div class="announcement">
+    A little more ritual. A lot more aroma.
+    <span>Explore the collection&nbsp; ↗</span>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" id="top">
+
+    <!-- Brand Logo + Text -->
+    <a class="brand" href="index.html" aria-label="Brown Ocean Coffee home">
+
+      <img
+        class="brand-logo"
+        src="./assets/images/brown-ocean-coffee-main-logo-cropped.png"
+        alt="Brown Ocean Coffee circular logo"
+      >
+
+      <span class="brand-text">
+        <span class="brand-name">BROWN OCEAN</span>
+        <span class="brand-tagline">C O F F E E</span>
+      </span>
+
+    </a>
+
+    <!-- Mobile Menu -->
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="our-story.html">Our story</a>
+      <a href="ritual.html">The ritual</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+
+      <button class="icon-btn search-open" aria-label="Search products">
+        ⌕
+      </button>
+
+      <button class="icon-btn account-btn" aria-label="Account">
+        ♙
+      </button>
+
+      <button class="cart-open" aria-label="Open cart">
+        Bag <span id="cart-count">0</span>
+      </button>
+
+    </div>
+
+  </header>
+
+<main><section class="page-hero shop-page-hero"><p class="eyebrow">THE COLLECTION</p><h1>Choose your <em>vessel.</em></h1><p>Three ways in. One ocean.</p><span>Explore the Brown Ocean collection.</span></section>    <!-- Shop Section -->
+    <section class="section shop-section" id="shop">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+
+          <h2>
+            Your coffee.<br>
+            <em>Your kind of ritual.</em>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          From quick, beautiful mornings to slow weekend brews,
+          find the coffee that feels like you.
+        </p>
+
+      </div>
+
+      <div class="category-tabs" role="tablist" aria-label="Filter by coffee type">
+
+        <button class="category-tab active" data-filter="all">
+          All coffee <span>12</span>
+        </button>
+
+        <button class="category-tab" data-filter="instant">
+          Instant coffee <span>04</span>
+        </button>
+
+        <button class="category-tab" data-filter="beans">
+          Roasted beans <span>04</span>
+        </button>
+
+        <button class="category-tab" data-filter="bags">
+          Brewing bags <span>04</span>
+        </button>
+
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+
+      <div class="shop-bottom">
+        <span>GOOD THINGS TAKE A LITTLE TIME.</span>
+
+        <button class="underlined-btn" id="show-all">
+          Explore all coffee <span>↗</span>
+        </button>
+      </div>
+
+    </section>
+
+</main>  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a class="brand brand-light" href="index.html" aria-label="Brown Ocean Coffee home">
+
+          <img
+            class="brand-logo footer-logo"
+            src="./assets/images/brown-ocean-coffee-main-logo-cropped.png"
+            alt="Brown Ocean Coffee logo"
+          >
+
+        </a>
+
+        <p>
+          For the moments that deserve<br>
+          a really good cup.
+        </p>
+
+        <div class="social-links">
+          <a href="contact.html" aria-label="Instagram">ig</a>
+          <a href="contact.html" aria-label="Facebook">f</a>
+          <a href="contact.html" aria-label="YouTube">▶</a>
+        </div>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>EXPLORE</h4>
+
+        <a href="shop.html">Shop all coffee</a>
+        <a href="shop.html" data-jump-filter="instant">Instant coffee</a>
+        <a href="shop.html" data-jump-filter="beans">Roasted beans</a>
+        <a href="shop.html" data-jump-filter="bags">Brewing bags</a>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>THE DETAILS</h4>
+
+        <a href="our-story.html">Our story</a>
+        <a href="ritual.html">Our coffee ritual</a>
+        <a href="mailto:hello@brownoceancoffee.com">Get in touch</a>
+        <a href="contact.html">Shipping & returns</a>
+
+      </div>
+
+      <div class="footer-contact">
+
+        <p class="eyebrow">HAVE A QUESTION?</p>
+
+        <a class="footer-email" href="mailto:hello@brownoceancoffee.com">
+          Let's talk coffee ↗
+        </a>
+
+        <p>hello@brownoceancoffee.com</p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span> Brown Ocean Coffee.
+        Made for good moments.
+      </span>
+
+      <span>BREW SLOW. LIVE WELL.</span>
+
+      <a href="index.html">Back to top ↑</a>
+
+    </div>
+
+  </footer>
+
+<div class="sr-only"><form id="newsletter-form"><input id="email" type="email"><small id="newsletter-message"></small></form></div>  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Cart Overlay -->
+  <div class="cart-overlay" id="cart-overlay">
+
+    <aside class="cart-drawer" aria-label="Shopping bag">
+
+      <div class="drawer-head">
+
+        <div>
+          <p class="eyebrow">YOUR LITTLE COLLECTION</p>
+          <h3>Your bag <span id="drawer-count">(0)</span></h3>
+        </div>
+
+        <button class="drawer-close" aria-label="Close cart">×</button>
+
+      </div>
+
+      <div class="cart-items" id="cart-items">
+
+        <div class="empty-cart">
+          Your bag is taking a quiet moment.<br>
+          <a href="#shop" class="drawer-close-link">
+            Find your coffee →
+          </a>
+        </div>
+
+      </div>
+
+      <div class="cart-summary">
+
+        <div>
+          <span>Subtotal</span>
+          <strong id="cart-subtotal">₹0</strong>
+        </div>
+
+        <small>Shipping calculated at checkout.</small>
+
+        <button class="btn btn-gold checkout-btn" id="checkout-btn">
+          Continue to checkout ↗
+        </button>
+
+        <p class="demo-note">
+          Demo storefront — checkout is not connected yet.
+        </p>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+
+    <div class="search-box">
+
+      <button class="search-close" aria-label="Close search">×</button>
+
+      <p class="eyebrow">FIND YOUR FAVOURITE</p>
+
+      <label for="search-input">
+        What are you in the mood for?
+      </label>
+
+      <input
+        id="search-input"
+        placeholder="Try hazelnut, roast, brew bags…"
+      >
+
+      <div id="search-results"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Product Modal -->
+  <div class="product-modal" id="product-modal" aria-hidden="true">
+
+    <div class="product-modal-backdrop" data-close-product></div>
+
+    <section
+      class="product-modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-product-name"
+    >
+
+      <button
+        class="product-modal-close"
+        data-close-product
+        aria-label="Close product details"
+      >
+        ×
+      </button>
+
+      <div class="modal-product-image">
+        <img id="modal-product-image" src="" alt="">
+      </div>
+
+      <div class="modal-product-copy">
+
+        <p class="eyebrow" id="modal-product-category"></p>
+
+        <h2 id="modal-product-name"></h2>
+
+        <p class="modal-rating">
+          ★★★★★ <span>Thoughtfully selected coffee</span>
+        </p>
+
+        <p id="modal-product-description"></p>
+
+        <div class="modal-price" id="modal-product-price"></div>
+
+        <label for="modal-size">Choose your size</label>
+        <select id="modal-size"></select>
+
+        <label for="modal-qty">Quantity</label>
+
+        <div class="modal-quantity">
+
+          <button type="button" id="modal-qty-minus" aria-label="Decrease quantity">
+            −
+          </button>
+
+          <input id="modal-qty" type="number" min="1" value="1">
+
+          <button type="button" id="modal-qty-plus" aria-label="Increase quantity">
+            +
+          </button>
+
+        </div>
+
+        <button class="btn btn-gold modal-add" id="modal-add-to-cart">
+          Add to bag ↗
+        </button>
+
+        <p class="modal-footnote">
+          Secure checkout will be available once payments are connected.
+        </p>
+
+      </div>
+
+    </section>
+
+  </div>
+
+<script src="app.js"></script></body></html>

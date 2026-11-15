@@ -1,0 +1,615 @@
+:root{--ink:#21130d;--dark:#170d08;--brown:#4a2d1f;--caramel:#c18a4a;--cream:#f4eadb;--paper:#fffaf2;--muted:#8c7867;--line:#dfd0bd;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.announcement{background:var(--dark);color:#e9d4b6;padding:10px 5%;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:center;gap:10px}.announcement span{color:#d5a35f}.site-header{height:76px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:#21130df7;color:#fff4e3;position:sticky;top:0;z-index:20;border-bottom:1px solid #62452f}.brand{display:flex;align-items:center;gap:10px;color:#f1d5a0}.brand-mark{font-size:34px;line-height:1;color:#d9a65e}.brand-name{font-size:11px;letter-spacing:.13em;font-weight:700}.brand-name small{display:block;font-size:8px;letter-spacing:.35em;margin-top:3px}.main-nav,.header-actions{display:flex;align-items:center;gap:27px}.main-nav a{font-size:12px;color:#f5e7d7}.main-nav a:hover{color:#d9a65e}.header-actions{gap:14px}.icon-btn,.cart-open,.menu-toggle{background:none;border:0;color:inherit}.icon-btn{font-size:22px}.cart-open{border:1px solid #806046;padding:10px 14px;font-size:11px;letter-spacing:.06em}.cart-open span{background:var(--caramel);color:#21130d;border-radius:50%;padding:2px 6px;margin-left:5px}.menu-toggle{display:none;font-size:22px}.hero{background:var(--dark);color:#fff0db;min-height:600px;display:grid;grid-template-columns:.82fr 1.18fr;padding-left:7%;overflow:hidden}.hero-copy{padding:90px 30px 70px 0;align-self:center;position:relative;z-index:1}.eyebrow{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#b98a53;margin:0 0 18px}.eyebrow span{display:inline-block;width:22px;height:1px;background:var(--caramel);vertical-align:middle;margin-right:9px}.hero h1{font:clamp(56px,7vw,100px)/.98 var(--serif);font-weight:400;letter-spacing:-.045em;margin:0 0 26px}.hero h1 em,.section-heading h2 em,.story-copy h2 em,.ritual-top h2 em,.newsletter h2 em,blockquote em{color:#c79759;font-weight:400}.hero-text{max-width:370px;color:#cdbba8;line-height:1.9;font-size:14px}.hero-actions{display:flex;align-items:center;gap:25px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:20px;border:0;padding:15px 20px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.btn-gold{background:var(--caramel);color:#1e110a}.btn-gold:hover{background:#d8ab70}.text-link{font-size:11px;border-bottom:1px solid #9d7852;padding-bottom:7px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:65px;color:#9f8b78;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.note-line{height:1px;width:40px;background:#9d7852}.hero-visual{min-height:600px;position:relative;background:#382116}.hero-image{position:absolute;inset:0;background:linear-gradient(90deg,#170d08 0%,#170d0833 22%,#170d0800 60%),linear-gradient(0deg,#170d0888,transparent 30%),url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1500&q=90') center/cover}.hero-stamp{position:absolute;right:9%;top:17%;width:145px;height:145px;border:1px solid #d6ad74;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#e7c99e;transform:rotate(9deg);background:#21130d66}.hero-stamp span{font-size:7px;letter-spacing:.17em}.hero-stamp strong{font:25px/.95 var(--serif);margin:8px 0}.hero-caption{position:absolute;bottom:24px;left:28px;right:28px;display:flex;justify-content:space-between;color:#d4bfa5;font-size:8px;letter-spacing:.15em}.trust-strip{display:grid;grid-template-columns:repeat(4,1fr);background:#2b190f;color:#f0dfc9;padding:23px 7%;gap:15px}.trust-strip>div{display:flex;justify-content:center;align-items:center;gap:12px;font-size:10px;letter-spacing:.06em}.trust-icon{color:#c89656;font-size:21px}.section{padding:105px 7%}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.section-heading h2,.story-copy h2,.ritual-top h2,.newsletter h2{font:clamp(38px,4vw,58px)/1.08 var(--serif);font-weight:400;margin:0}.section-heading h2 em{color:#9e7145}.section-intro{max-width:330px;line-height:1.8;color:var(--muted);margin:0 0 5px}.category-tabs{display:flex;gap:25px;border-bottom:1px solid var(--line);margin-bottom:28px;overflow:auto}.category-tab{white-space:nowrap;background:none;border:0;padding:0 0 15px;color:#897666;font-size:11px}.category-tab span{font-size:9px;color:#b18a5f;margin-left:5px}.category-tab.active{border-bottom:2px solid #7a4c2b;color:var(--ink)}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.product-card{min-width:0}.product-photo{height:285px;background:#ead9c2;position:relative;overflow:hidden;cursor:pointer}.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.product-card:hover .product-photo img{transform:scale(1.06)}.product-badge{position:absolute;left:12px;top:12px;background:#f5e7d4;padding:7px 9px;font-size:8px;letter-spacing:.1em;text-transform:uppercase}.quick-view{position:absolute;bottom:10px;left:10px;right:10px;background:#21130de8;color:#fff0db;border:0;padding:12px;text-transform:uppercase;font-size:9px;letter-spacing:.12em;opacity:0;transform:translateY(8px);transition:.25s}.product-card:hover .quick-view{opacity:1;transform:none}.product-info{padding:15px 2px}.product-type{color:#9c7955;font-size:8px;letter-spacing:.15em;text-transform:uppercase}.product-title-row{display:flex;justify-content:space-between;gap:8px;align-items:start;margin:7px 0}.product-title{font:19px var(--serif);margin:0;font-weight:400}.product-price{font-size:12px;font-weight:600;white-space:nowrap}.product-desc{color:#8a7868;font-size:10px;line-height:1.6;margin:7px 0 12px}.product-bottom{display:flex;align-items:center;justify-content:space-between}.rating{font-size:10px;color:#b07c3e;letter-spacing:1px}.add-btn{border:1px solid #a77b4c;background:transparent;color:#4b2c1a;padding:9px 12px;font-size:9px;text-transform:uppercase;letter-spacing:.08em}.add-btn:hover{background:#4b2c1a;color:#fff}.shop-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:40px;color:#9a8068;font-size:9px;letter-spacing:.14em}.underlined-btn{background:none;border:0;border-bottom:1px solid #9c7149;padding:0 0 8px;color:#4d2c1a;font-size:10px;letter-spacing:.08em}.story-section{display:grid;grid-template-columns:1fr 1fr;background:#21130d;color:#f6e8d5}.story-photo{min-height:610px;position:relative;background:linear-gradient(0deg,#21130d99,transparent 35%),url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85') center/cover}.photo-label{position:absolute;bottom:25px;left:7%;font-size:9px;letter-spacing:.16em}.photo-label span{color:#c18a4a}.story-copy{padding:90px 12%;align-self:center}.story-copy h2{font-size:clamp(40px,4vw,59px);margin-bottom:28px}.story-copy>p:not(.eyebrow){color:#c5b19c;line-height:1.9;font-size:12px}.story-copy .text-link{display:inline-block;margin-top:20px}.signature{font:italic 20px var(--serif);margin-top:55px;color:#d4a66a}.signature span{display:block;font:9px var(--sans);letter-spacing:.15em;text-transform:uppercase;margin-top:10px;color:#b5a08a}.ritual-section{padding:105px 7%;background:#f0e3d1}.ritual-top{text-align:center;max-width:550px;margin:0 auto 50px}.ritual-top h2{font-size:52px}.ritual-top>p:last-child{color:#887361;line-height:1.8}.ritual-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.ritual-card{min-height:360px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;color:#f8ead7;background:#2b190f;position:relative;overflow:hidden}.ritual-card:before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;opacity:.48;transition:transform .5s}.ritual-card:hover:before{transform:scale(1.05)}.ritual-instant:before{background-image:linear-gradient(0deg,#1d1009,transparent),url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80')}.ritual-beans:before{background-image:linear-gradient(0deg,#1d1009,transparent),url('https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=700&q=80')}.ritual-bags:before{background-image:linear-gradient(0deg,#1d1009,transparent),url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=700&q=80')}.ritual-number,.ritual-card>div:last-child{position:relative;z-index:1}.ritual-number{font:34px var(--serif);color:#d9ac72}.ritual-card h3{font:30px var(--serif);font-weight:400;margin:7px 0}.ritual-card p:not(.eyebrow){font-size:11px;color:#d5c0a9;line-height:1.7;max-width:280px}.ritual-card a{font-size:10px;display:inline-block;border-bottom:1px solid #c18a4a;padding-bottom:7px;margin-top:12px}.quote-section{text-align:center;padding:90px 20px 100px;background:#2b190f;color:#f8ead7;position:relative;overflow:hidden}.quote-mark{font:90px var(--serif);color:#c18a4a;height:60px}.quote-section blockquote{font:clamp(35px,5vw,62px)/1.15 var(--serif);margin:15px 0 25px}.quote-section blockquote em{color:#d3a365}.quote-section>p{font-size:8px;letter-spacing:.22em;color:#c6ad91}.quote-decoration{position:absolute;width:220px;height:220px;border:1px solid #8b603a;border-radius:50%;right:-90px;top:20px;opacity:.3}.newsletter{display:grid;grid-template-columns:70px 1fr 1fr;align-items:center;gap:25px;padding:75px 8%;background:#e8d6bf}.newsletter-symbol{font-size:48px;color:#91633d}.newsletter h2{font-size:42px}.newsletter>div:nth-child(2)>p:last-child{color:#8c7764;font-size:11px;line-height:1.7}.newsletter form{padding-left:25px}.newsletter label{display:block;font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}.email-row{display:flex;border-bottom:1px solid #977452}.email-row input{border:0;background:transparent;outline:none;padding:13px 0;flex:1;min-width:0}.email-row button{border:0;background:transparent;color:#6e452a;font-size:10px}.newsletter form small{display:block;color:#8b7865;margin-top:12px;font-size:9px}.site-footer{background:#170d08;color:#e8d6bf;padding:60px 7% 20px}.footer-main{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:30px;padding-bottom:50px}.brand-light{margin-bottom:20px}.footer-brand>p,.footer-contact>p:not(.eyebrow){font-size:10px;color:#a9947d;line-height:1.8}.social-links{display:flex;gap:9px;margin-top:20px}.social-links a{border:1px solid #63452f;width:30px;height:30px;display:grid;place-items:center;font-size:10px}.footer-col h4{font-size:9px;letter-spacing:.17em;color:#b88b58;margin:7px 0 22px}.footer-col a{display:block;color:#c1ad97;font-size:10px;margin:13px 0}.footer-email{font:22px var(--serif);color:#f1dfc7}.footer-bottom{border-top:1px solid #4c3424;padding-top:18px;display:flex;justify-content:space-between;gap:15px;color:#8d7863;font-size:8px;letter-spacing:.08em}.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#21130d;color:#fff0db;padding:14px 20px;z-index:60;font-size:11px;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.cart-overlay,.search-overlay,.product-modal{position:fixed;inset:0;z-index:50;visibility:hidden;opacity:0;transition:.25s}.cart-overlay.open,.search-overlay.open,.product-modal.open{visibility:visible;opacity:1}.cart-overlay,.search-overlay{background:#120903a8}.cart-drawer{position:absolute;right:0;top:0;height:100%;width:min(440px,100%);background:var(--paper);padding:28px;display:flex;flex-direction:column;transform:translateX(100%);transition:.3s}.cart-overlay.open .cart-drawer{transform:none}.drawer-head{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer-head .eyebrow{margin-bottom:8px}.drawer-head h3{font:30px var(--serif);font-weight:400;margin:0}.drawer-close,.search-close,.product-modal-close{border:0;background:none;font-size:28px;align-self:start}.cart-items{flex:1;overflow:auto;padding:15px 0}.empty-cart{color:#8b7764;line-height:2;text-align:center;margin-top:70px}.drawer-close-link{color:#79502e;border-bottom:1px solid}.cart-item{display:grid;grid-template-columns:75px 1fr auto;gap:13px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-item img{width:75px;height:90px;object-fit:cover}.cart-item h4{font:16px var(--serif);margin:2px 0 6px}.cart-item small{color:#8b7764}.cart-item strong{font-size:12px}.cart-item-controls{display:flex;align-items:center;gap:9px;margin-top:10px}.cart-item-controls button{background:none;border:1px solid var(--line);width:24px;height:24px}.cart-summary{border-top:1px solid var(--line);padding-top:20px}.cart-summary>div{display:flex;justify-content:space-between;font-size:13px}.cart-summary small,.demo-note{display:block;color:#8b7764;font-size:9px;margin:10px 0 15px}.checkout-btn{width:100%}.demo-note{text-align:center}.search-overlay{display:grid;place-items:start center;padding:12vh 20px}.search-box{width:min(650px,100%);background:var(--paper);padding:35px;position:relative}.search-close{position:absolute;right:20px;top:12px}.search-box label{display:block;font:30px var(--serif);margin-bottom:20px}.search-box input{width:100%;padding:14px;border:0;border-bottom:1px solid var(--line);background:transparent;outline:none}.search-result{display:flex;align-items:center;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}.search-result img{width:55px;height:60px;object-fit:cover}.search-result span{font:17px var(--serif)}.search-result strong{margin-left:auto;font-size:11px}.product-modal{display:grid;place-items:center;padding:20px}.product-modal-backdrop{position:absolute;inset:0;background:#130a04bb}.product-modal-card{position:relative;background:var(--paper);width:min(820px,100%);max-height:90vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;z-index:1}.product-modal-close{position:absolute;right:14px;top:8px;z-index:2}.modal-product-image{min-height:450px;background:#e4d0b5}.modal-product-image img{width:100%;height:100%;object-fit:cover}.modal-product-copy{padding:45px 35px}.modal-product-copy h2{font:35px var(--serif);font-weight:400;margin:10px 0}.modal-rating{color:#b17d3f;font-size:11px}.modal-rating span{color:#9b8876;margin-left:8px}.modal-product-copy>p:not(.eyebrow):not(.modal-rating){color:#857261;font-size:11px;line-height:1.8}.modal-price{font-size:20px;font-weight:600;margin:20px 0}.modal-product-copy label{display:block;font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin:15px 0 7px}.modal-product-copy select{width:100%;padding:12px;background:transparent;border:1px solid var(--line)}.modal-quantity{display:flex;align-items:center}.modal-quantity button{height:38px;width:38px;background:transparent;border:1px solid var(--line)}.modal-quantity input{width:55px;height:38px;text-align:center;border:1px solid var(--line);border-left:0;border-right:0;background:transparent}.modal-add{width:100%;margin-top:20px}.modal-footnote{font-size:9px;color:#927e6b;line-height:1.6}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:1000px){.hero{grid-template-columns:.9fr 1.1fr;padding-left:5%}.hero-copy{padding-top:65px}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.product-photo{height:250px}.story-copy{padding:65px 8%}.newsletter{grid-template-columns:50px 1fr;}.newsletter form{grid-column:2;padding-left:0}.footer-main{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.announcement{font-size:8px}.site-header{height:65px;padding:0 5%}.menu-toggle{display:block;margin-left:auto;margin-right:12px}.main-nav{display:none;position:absolute;top:65px;left:0;right:0;background:#21130d;padding:20px 6%;flex-direction:column;align-items:start;gap:20px;border-top:1px solid #62452f}.main-nav.open{display:flex}.header-actions{gap:8px}.account-btn{display:none}.cart-open{padding:8px}.brand-name{font-size:9px}.brand-mark{font-size:28px}.hero{display:block;padding:0;position:relative}.hero-copy{padding:65px 7% 50px}.hero h1{font-size:68px}.hero-visual{min-height:340px}.hero-stamp{width:105px;height:105px;right:7%;top:12%}.hero-stamp strong{font-size:20px}.hero-note{margin-top:35px}.trust-strip{grid-template-columns:repeat(2,1fr);padding:20px 5%;gap:20px}.trust-strip>div{justify-content:flex-start;font-size:9px}.section{padding:70px 5%}.section-heading{display:block}.section-heading h2{font-size:44px}.section-intro{margin-top:20px}.category-tabs{gap:18px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.product-photo{height:220px}.product-title{font-size:17px}.product-title-row{display:block}.product-price{display:block;margin-top:5px}.quick-view{opacity:1;transform:none;padding:9px}.product-desc{font-size:9px}.add-btn{padding:8px;font-size:8px}.shop-bottom{align-items:start;gap:15px;font-size:8px}.story-section{grid-template-columns:1fr}.story-photo{min-height:380px}.story-copy{padding:60px 7%}.story-copy h2{font-size:48px}.ritual-section{padding:70px 5%}.ritual-top h2{font-size:43px}.ritual-cards{grid-template-columns:1fr}.ritual-card{min-height:300px}.quote-section{padding:70px 15px}.newsletter{padding:55px 7%;grid-template-columns:1fr;gap:10px}.newsletter-symbol{display:none}.newsletter h2{font-size:38px}.newsletter form{grid-column:1;margin-top:20px}.site-footer{padding:45px 6% 20px}.footer-main{grid-template-columns:1fr 1fr;gap:28px 15px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-wrap:wrap;line-height:1.8}.product-modal-card{grid-template-columns:1fr;max-height:92vh}.modal-product-image{min-height:230px;height:230px}.modal-product-copy{padding:25px}.modal-product-copy h2{font-size:29px}.search-box{padding:28px 20px}.search-box label{font-size:24px}}@media(max-width:390px){.product-photo{height:180px}.header-actions .icon-btn{display:none}.hero h1{font-size:59px}.footer-main{grid-template-columns:1fr}.footer-brand{grid-column:auto}}
+
+
+/* =====================================================
+   BROWN OCEAN COFFEE — PREMIUM BRANDING
+   Navbar logo + separate brand text
+===================================================== */
+
+.site-header {
+    height: 92px;
+}
+
+.site-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 0 0 auto;
+    min-width: 0;
+    color: #f1d5a0;
+    text-decoration: none;
+}
+
+.site-header .brand-logo {
+    display: block;
+    width: 82px;
+    height: 82px;
+    max-width: none;
+    object-fit: contain;
+    object-position: center;
+    flex: 0 0 auto;
+}
+
+.site-header .brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.site-header .brand-name {
+    display: block;
+    margin: 0;
+    color: #e8c99b;
+    font-family: var(--serif);
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.site-header .brand-tagline {
+    display: block;
+    color: #c18a4a;
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+/* Keep the footer emblem independent of navbar sizing */
+.footer-logo {
+    width: 96px;
+    height: 96px;
+    max-height: none;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+    .site-header .brand {
+        gap: 10px;
+    }
+
+    .site-header .brand-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .site-header .brand-name {
+        font-size: 17px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .footer-logo {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        height: 76px;
+    }
+
+    .site-header .brand {
+        gap: 7px;
+    }
+
+    .site-header .brand-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .site-header .brand-name {
+        font-size: 13px;
+        letter-spacing: 0.3px;
+    }
+
+    .site-header .brand-tagline {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .site-header .main-nav {
+        top: 76px;
+    }
+
+    .site-header .menu-toggle {
+        margin-right: 8px;
+    }
+
+    .site-header .header-actions {
+        gap: 6px;
+    }
+
+    .footer-logo {
+        width: 82px;
+        height: 82px;
+    }
+}
+
+@media (max-width: 390px) {
+    .site-header .brand {
+        gap: 5px;
+    }
+
+    .site-header .brand-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .site-header .brand-name {
+        font-size: 11px;
+    }
+
+    .site-header .brand-tagline {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .site-header .header-actions .icon-btn {
+        display: none;
+    }
+}
+
+
+/* ==========================================
+   BROWN OCEAN - DESKTOP HERO FIX
+   Optimized for 100% Browser Zoom
+========================================== */
+
+@media (min-width: 1001px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        padding-left: 6%;
+        padding-right: 0;
+        min-height: 620px;
+        overflow: hidden;
+    }
+
+    .hero-copy {
+        padding: 80px 35px 70px 0;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(58px, 5.6vw, 78px);
+        line-height: 1.02;
+        letter-spacing: -0.045em;
+        white-space: normal;
+        max-width: 100%;
+    }
+
+    .hero-text {
+        max-width: 420px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+        min-height: 620px;
+    }
+
+    .hero-image {
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+/* ==========================================
+   LAPTOP RESPONSIVENESS
+========================================== */
+
+@media (min-width: 1001px) and (max-width: 1250px) {
+
+    .hero {
+        grid-template-columns: 1fr 0.9fr;
+        padding-left: 5%;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+}
+
+/* ==========================================
+   MEDIUM SCREENS
+========================================== */
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5%;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 65px);
+    }
+
+    .hero-copy {
+        padding: 60px 20px 60px 0;
+    }
+
+}
+
+
+/* =====================================
+   FINAL DESKTOP HERO LAYOUT
+   Optimized for 100% browser zoom
+===================================== */
+
+@media (min-width: 1001px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        min-height: 620px;
+        padding-left: 6%;
+        padding-right: 0;
+    }
+
+    .hero-copy {
+        padding: 75px 25px 65px 0;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 4.6vw, 62px);
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+        white-space: nowrap;
+        margin-bottom: 25px;
+    }
+
+    .hero-visual {
+        min-height: 620px;
+        width: 100%;
+        position: relative;
+    }
+
+    .hero-image {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-stamp {
+        width: 145px;
+        height: 145px;
+    }
+}
+
+/* =====================================================
+   BROWN OCEAN COFFEE — FINAL ANNOUNCEMENT BAR + NAVBAR
+   Header-only update; all other site sections unchanged
+===================================================== */
+
+/* Announcement bar */
+.announcement {
+    min-height: 34px;
+    padding: 8px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--dark);
+    color: #e9d4b6;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.announcement span {
+    color: #d5a35f;
+}
+
+/* Main navbar */
+.site-header {
+    height: 86px;
+    padding: 0 4.8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #21130df7;
+    color: #fff4e3;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid #62452f;
+}
+
+/* Logo and brand lockup */
+.site-header .brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+    flex: 0 0 auto;
+    min-width: 0;
+    color: #f1d5a0;
+    text-decoration: none;
+}
+
+.site-header .brand-logo {
+    display: block;
+    width: 70px;
+    height: 70px;
+    max-width: none;
+    object-fit: contain;
+    object-position: center;
+    flex: 0 0 auto;
+}
+
+.site-header .brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.site-header .brand-name {
+    display: block;
+    margin: 0;
+    color: #e8c99b;
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.site-header .brand-tagline {
+    display: block;
+    margin: 0;
+    color: #c18a4a;
+    font-family: var(--sans);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.4;
+}
+
+/* Navigation links */
+.site-header .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex: 0 1 auto;
+}
+
+.site-header .main-nav a {
+    color: #f5e7d7;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.site-header .main-nav a:hover {
+    color: #d9a65e;
+}
+
+/* Search, account and bag controls */
+.site-header .header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    flex: 0 0 auto;
+}
+
+.site-header .icon-btn,
+.site-header .cart-open,
+.site-header .menu-toggle {
+    color: inherit;
+}
+
+.site-header .menu-toggle {
+    display: none;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .site-header {
+        height: 80px;
+        padding: 0 3%;
+        gap: 14px;
+    }
+
+    .site-header .brand {
+        gap: 9px;
+    }
+
+    .site-header .brand-logo {
+        width: 62px;
+        height: 62px;
+    }
+
+    .site-header .brand-name {
+        font-size: 16px;
+    }
+
+    .site-header .brand-tagline {
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+    .site-header .main-nav {
+        gap: 15px;
+    }
+
+    .site-header .header-actions {
+        gap: 9px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .announcement {
+        min-height: 30px;
+        padding: 7px 3%;
+        gap: 6px;
+        font-size: 8px;
+        letter-spacing: 0.08em;
+    }
+
+    .site-header {
+        height: 72px;
+        padding: 0 4%;
+        gap: 8px;
+    }
+
+    .site-header .brand {
+        gap: 7px;
+    }
+
+    .site-header .brand-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .site-header .brand-name {
+        font-size: 13px;
+        letter-spacing: 0.4px;
+    }
+
+    .site-header .brand-tagline {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .site-header .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 4px;
+        font-size: 22px;
+    }
+
+    .site-header .main-nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 20px 6%;
+        background: #21130d;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        border-top: 1px solid #62452f;
+    }
+
+    .site-header .main-nav.open {
+        display: flex;
+    }
+
+    .site-header .header-actions {
+        gap: 8px;
+    }
+
+    .site-header .account-btn {
+        display: none;
+    }
+
+    .site-header .cart-open {
+        padding: 8px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 390px) {
+    .site-header {
+        padding: 0 3%;
+    }
+
+    .site-header .brand {
+        gap: 5px;
+    }
+
+    .site-header .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .site-header .brand-name {
+        font-size: 11px;
+        letter-spacing: 0.2px;
+    }
+
+    .site-header .brand-tagline {
+        font-size: 7px;
+        letter-spacing: 1.5px;
+    }
+
+    .site-header .header-actions .icon-btn {
+        display: none;
+    }
+}
+
+/* Footer logo remains independent of navbar sizing */
+.footer-logo {
+    width: 96px;
+    height: 96px;
+    max-height: none;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+    .footer-logo {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-logo {
+        width: 82px;
+        height: 82px;
+    }
+}
+
+.site-header .brand-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 50%;
+    padding: 0;
+    display: block;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* Brown Ocean Coffee - Logo only */
+.site-header .brand-logo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
